@@ -12,8 +12,8 @@ struct CountryDetail: View {
   var body: some View {
     Group {
       Text(code)
-      Text(country?.name ?? "???")
-      Text(country?.emoji ?? "???")
+      Text(country?.name ?? "??? - No data for name")
+      Text(country?.emoji ?? "??? - No data for emoji")
     }
     .onAppear {
       fetchData()

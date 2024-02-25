@@ -16,10 +16,6 @@
 		1B99B7C22B8BA8C80002C4E6 /* CountryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7A02B8BA8C80002C4E6 /* CountryRow.swift */; };
 		1B99B7C32B8BA8C80002C4E6 /* CountryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7A12B8BA8C80002C4E6 /* CountryDetail.swift */; };
 		1B99B7C42B8BA8C80002C4E6 /* GraphQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7A32B8BA8C80002C4E6 /* GraphQL.swift */; };
-		1B99B7C82B8BA8C80002C4E6 /* SQLiteSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7A92B8BA8C80002C4E6 /* SQLiteSerialization.swift */; };
-		1B99B7C92B8BA8C80002C4E6 /* SQLiteDotSwiftDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7AA2B8BA8C80002C4E6 /* SQLiteDotSwiftDatabase.swift */; };
-		1B99B7CA2B8BA8C80002C4E6 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7AB2B8BA8C80002C4E6 /* SQLiteDatabase.swift */; };
-		1B99B7CC2B8BA8C80002C4E6 /* SQLiteNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B7AD2B8BA8C80002C4E6 /* SQLiteNormalizedCache.swift */; };
 		1B99B7D22B8BAA7E0002C4E6 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1B99B7D12B8BAA7E0002C4E6 /* Apollo */; };
 		1B99B7D42B8BAA7E0002C4E6 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B99B7D32B8BAA7E0002C4E6 /* ApolloAPI */; };
 		1B99B7D72B8BAA8A0002C4E6 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 1B99B7D62B8BAA8A0002C4E6 /* SQLite */; };
@@ -38,10 +34,6 @@
 		1B99B7A02B8BA8C80002C4E6 /* CountryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryRow.swift; sourceTree = "<group>"; };
 		1B99B7A12B8BA8C80002C4E6 /* CountryDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetail.swift; sourceTree = "<group>"; };
 		1B99B7A32B8BA8C80002C4E6 /* GraphQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQL.swift; sourceTree = "<group>"; };
-		1B99B7A92B8BA8C80002C4E6 /* SQLiteSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteSerialization.swift; sourceTree = "<group>"; };
-		1B99B7AA2B8BA8C80002C4E6 /* SQLiteDotSwiftDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDotSwiftDatabase.swift; sourceTree = "<group>"; };
-		1B99B7AB2B8BA8C80002C4E6 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
-		1B99B7AD2B8BA8C80002C4E6 /* SQLiteNormalizedCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteNormalizedCache.swift; sourceTree = "<group>"; };
 		1B99B7D82B8BAFBE0002C4E6 /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
 		1BF807982B8B489000BBDFF9 /* apolloBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apolloBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF8079B2B8B489000BBDFF9 /* apolloBugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apolloBugApp.swift; sourceTree = "<group>"; };
@@ -124,24 +116,12 @@
 			path = network;
 			sourceTree = "<group>";
 		};
-		1B99B7A42B8BA8C80002C4E6 /* ApolloSQLite */ = {
-			isa = PBXGroup;
-			children = (
-				1B99B7A92B8BA8C80002C4E6 /* SQLiteSerialization.swift */,
-				1B99B7AA2B8BA8C80002C4E6 /* SQLiteDotSwiftDatabase.swift */,
-				1B99B7AB2B8BA8C80002C4E6 /* SQLiteDatabase.swift */,
-				1B99B7AD2B8BA8C80002C4E6 /* SQLiteNormalizedCache.swift */,
-			);
-			path = ApolloSQLite;
-			sourceTree = "<group>";
-		};
 		1BF8078F2B8B489000BBDFF9 = {
 			isa = PBXGroup;
 			children = (
 				1B99B7D82B8BAFBE0002C4E6 /* apollo-codegen-config.json */,
 				1BF8079B2B8B489000BBDFF9 /* apolloBugApp.swift */,
 				1B99B78D2B8BA8C70002C4E6 /* graphql */,
-				1B99B7A42B8BA8C80002C4E6 /* ApolloSQLite */,
 				1B99B7A22B8BA8C80002C4E6 /* network */,
 				1B99B79B2B8BA8C80002C4E6 /* views */,
 				1BF807992B8B489000BBDFF9 /* Products */,
@@ -242,14 +222,10 @@
 			files = (
 				1B99B7C22B8BA8C80002C4E6 /* CountryRow.swift in Sources */,
 				1BF8079C2B8B489000BBDFF9 /* apolloBugApp.swift in Sources */,
-				1B99B7CA2B8BA8C80002C4E6 /* SQLiteDatabase.swift in Sources */,
 				1B99B7C12B8BA8C80002C4E6 /* CountriesView.swift in Sources */,
 				1B99B7C32B8BA8C80002C4E6 /* CountryDetail.swift in Sources */,
 				1B99B7C02B8BA8C80002C4E6 /* MainView.swift in Sources */,
 				1B99B7C42B8BA8C80002C4E6 /* GraphQL.swift in Sources */,
-				1B99B7C82B8BA8C80002C4E6 /* SQLiteSerialization.swift in Sources */,
-				1B99B7CC2B8BA8C80002C4E6 /* SQLiteNormalizedCache.swift in Sources */,
-				1B99B7C92B8BA8C80002C4E6 /* SQLiteDotSwiftDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

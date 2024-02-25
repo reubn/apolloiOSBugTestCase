@@ -1,0 +1,40 @@
+{
+  "schemaNamespace": "apolloBugAppGraphQLSchema",
+  "schemaName": "apolloBugAppGraphQLSchema",
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "https://countries.trevorblades.com/",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": false,
+        "outputFormat": "SDL"
+      }
+    },
+    "downloadTimeout": 60,
+    "headers": [],
+    "outputPath": "./graphql/apolloBugApp.graphqls"
+  },
+  "input": {
+    "operationSearchPaths": ["**/*.graphql"],
+    "schemaSearchPaths": ["**/*.graphqls"]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./graphql/.generated",
+      "moduleType": {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  },
+  "options": {
+    "pruneGeneratedFiles": true
+  }
+}

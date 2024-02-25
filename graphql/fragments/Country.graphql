@@ -1,0 +1,5 @@
+fragment CountryInfo on Country {
+  code
+  name
+  emoji
+}
